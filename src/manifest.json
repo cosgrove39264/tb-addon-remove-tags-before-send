@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Remove tags before send",
+    "description": "removes HTML-Tags before sending an email",
+    "version": "1.1.1",
+    "author": "Marcel Schmidt",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "remove-tags-before-send@cosgrove39264",
+            "strict_min_version": "102.0"
+        }
+    },
+    "icons": {
+        "64": "images/icon-64px.png",
+        "32": "images/icon-32px.png",
+        "16": "images/icon-16px.png"
+    },
+    "background": {
+        "page": "background.html"
+    },
+    "options_ui": {
+      "page": "options/options.html",
+      "open_in_tab": false,
+      "browser_style": true
+    },
+    "permissions": [
+      "messagesModify",
+      "compose",
+      "storage"
+    ]
+}
